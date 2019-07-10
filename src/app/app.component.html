@@ -1,0 +1,102 @@
+<nb-layout>
+
+	<nb-layout-header>
+		<h3>Multiple Spinner Demo:</h3>&nbsp;&nbsp;
+		<h4>This is a demo of multiple spinner on single page with different options.</h4>
+	</nb-layout-header>
+
+	<nb-layout-column>
+		<p>Note: For better result open in new window</p>
+		<div class="container">
+			<div class="row">
+				<nb-layout-column>
+					<nb-card accent="primary">
+						<nb-card-header>
+							<span>Spinner 1</span>
+              <div>
+                <button nbButton size="xsmall" hero status="primary" (click)="showSpinner(spinner1)">Show</button>
+                <button nbButton size="xsmall" hero status="primary" (click)="hideSpinner(spinner1)">Hide</button>
+              </div>
+            </nb-card-header>
+						<nb-card-body class="card-body">
+							<ngx-spinner [name]="spinner1" [fullScreen]="false" type="ball-clip-rotate-multiple" size="medium"></ngx-spinner>
+						</nb-card-body>
+					</nb-card>
+				</nb-layout-column>
+				<nb-layout-column>
+					<nb-card accent="success">
+						<nb-card-header>
+              <span>Spinner 2</span>
+              <div>
+                <button nbButton size="xsmall" hero status="success" (click)="showSpinner('sp2')">Show</button>
+                <button nbButton size="xsmall" hero status="success" (click)="hideSpinner('sp2')">Hide</button>
+              </div>
+            </nb-card-header>
+						<nb-card-body class="card-body">
+							<ngx-spinner name="sp2" [fullScreen]="false" type="ball-fussion" size="medium"></ngx-spinner>
+						</nb-card-body>
+					</nb-card>
+				</nb-layout-column>
+				<nb-layout-column>
+					<nb-card accent="info">
+							<nb-card-header>
+              <span>Spinner 3</span>
+              <div>
+                <button nbButton size="xsmall" hero status="info" (click)="showSpinner('sp3')">Show</button>
+                <button nbButton size="xsmall" hero status="info" (click)="hideSpinner('sp3')">Hide</button>
+              </div>
+            </nb-card-header>
+						<nb-card-body class="card-body">
+							<ngx-spinner name="sp3" [fullScreen]="false" type="ball-spin-clockwise" size="medium"></ngx-spinner>
+						</nb-card-body>
+					</nb-card>
+				</nb-layout-column>
+			</div>
+			<div class="row">
+				<nb-layout-column>
+					<nb-card accent="warning">
+						<nb-card-header>
+              <span>Spinner 4</span>
+              <div>
+                <button nbButton size="xsmall" hero status="warning" (click)="showSpinner('sp4')">Show</button>
+                <button nbButton size="xsmall" hero status="warning" (click)="hideSpinner('sp4')">Hide</button>
+              </div>
+            </nb-card-header>
+						<nb-card-body class="card-body">
+							<ngx-spinner name="sp4" [fullScreen]="false" type="cog" size="medium"></ngx-spinner>
+						</nb-card-body>
+					</nb-card>
+				</nb-layout-column>
+				<nb-layout-column>
+					<nb-card accent="danger">
+						<nb-card-header>
+              <span>Spinner 5</span>
+              <div>
+                <button nbButton size="xsmall" hero status="danger" (click)="showSpinner('sp5')">Show</button>
+                <button nbButton size="xsmall" hero status="danger" (click)="hideSpinner('sp5')">Hide</button>
+              </div>
+            </nb-card-header>
+						<nb-card-body class="card-body">
+							<ngx-spinner name="sp5" [fullScreen]="false" type="square-jelly-box" size="medium"></ngx-spinner>
+						</nb-card-body>
+					</nb-card>
+				</nb-layout-column>
+				<nb-layout-column>
+					<nb-card accent="primary">
+						<nb-card-header>
+              <span>Spinner 6</span>
+              <div>
+                <button nbButton size="xsmall" hero status="primary" (click)="showSpinner('sp6')">Show</button>
+                <button nbButton size="xsmall" hero status="primary" (click)="hideSpinner('sp6')">Hide</button>
+              </div>
+            </nb-card-header>
+						<nb-card-body class="card-body">
+							<ngx-spinner name="sp6" [fullScreen]="false" type="timer" size="medium"></ngx-spinner>
+						</nb-card-body>
+					</nb-card>
+				</nb-layout-column>
+			</div>
+		</div>
+	</nb-layout-column>
+
+</nb-layout>

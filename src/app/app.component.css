@@ -1,0 +1,39 @@
+.container{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.row{
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+
+p {
+  font-family: Lato;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.card-body{
+  min-height: 200px;
+}
+
+button{
+  cursor: pointer !important;
+  margin-left: 10px;
+  font-weight: bold !important;
+}
+
+:host nb-layout-column {
+  padding: 10px !important;
+}
+
+:host nb-card-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px !important;
+}
